@@ -1,4 +1,4 @@
-FROM golang:1.13-alpine AS builder
+FROM golang:1.20-alpine AS builder
 ENV GO111MODULE=on
 RUN apk --update upgrade \
     && apk --no-cache --no-progress add git ca-certificates libcap \
